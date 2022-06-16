@@ -1,0 +1,69 @@
+/*---Overwritables---*/
+/*Title*/
+header{
+    width: 100%;
+}
+header h1{
+    text-align:center;
+    height: clamp(15vh,30vw,var( --fs-titule));
+    font-size: clamp(25px,40px,var( --fs-titule));
+    padding-top: 3vh;
+}
+
+/*side bar*/
+aside{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+aside img{
+    object-fit: cover;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+#gitHub{
+    object-fit: scale-down;
+    align-items: center;
+    height: 10vw;
+    width: 10vw;
+    padding: 5px;
+}
+#gitHub:hover{
+    background-color: rgb(253, 226, 226);
+}
+
+
+/*This changes shuld be reberted on the PC stylesheet*/
+.iconContainer{
+    margin-top: 30px;
+    min-width: 100vw;
+    min-height: 100px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.fa-envelope, .fa-comment-sms{
+    align-items: center;
+    font-size: 10vw;
+    color: var(--colorA);
+    padding: 5px;
+}
+.fa-envelope:hover, .fa-comment-sms:hover{
+    color: var(--colorB);
+    
+}
+.notInPhone{
+    display: none;
+}
+
+/**/
+.rigthComponent h3{
+
+    text-align: center;
+    border-bottom:solid 1px var(--colorA);
+}
+.subComponent{
+    padding-left:4vw;
+    padding-right:4vw;
+}

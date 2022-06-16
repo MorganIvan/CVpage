@@ -1,0 +1,73 @@
+
+@media (min-device-width: 1020px){
+    body{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: repeat(5,1fr);
+    }
+
+    /*header*/
+    header{
+        grid-column: 1/6;
+        grid-row: 1/3;
+    }
+    header h1{
+        width: auto;
+    }
+
+    /*aside*/
+    aside{
+        grid-column: 6;
+        grid-row: 1/6;
+        width: 35vw;
+        float: right;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    aside img{
+        width: 300px;
+        height: 300px;
+        margin-top: 3vh;
+    }
+    .asideComponent{
+        margin-top: 3vh;
+    }
+    .asideComponent p{
+        font-size: var(--fs-smallText);
+        padding: 30px;
+    }
+    .iconContainer{
+        min-width: 50vw;
+        display: flex;
+        justify-content:baseline;
+        align-items: center;
+    }
+    .fa-envelope, .fa-comment-sms{
+        font-size: 5vw;
+        color: var(--colorA);
+    }
+    #gitHub{
+        height: 5vw;
+        width: 5vw;
+        margin-bottom: 20px;
+    }
+    .notInPhone{
+        display:block;
+    }
+    .asideComponent h3{
+        text-align: center;
+    }
+
+    /*main*/
+    main{
+        grid-column: 1/6;
+        grid-row: 3/ 6;
+    }
+    .lastList{
+        max-height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}

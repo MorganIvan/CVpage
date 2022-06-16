@@ -1,0 +1,52 @@
+:root{
+    /*pallet*/
+    --colorA: rgba(66, 1, 1, 0.829);
+    --colorB: rgba(153, 0, 0, 0.918);
+    --bgdc:    rgba(259,259,250, 0.0);
+    /*fount sizes*/
+    --fs-titule: 6vh;
+    --fs-text: 4vh;
+    --fs-smallText: 3vh;
+}
+/*General Configration*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--bgdc);
+    background-image: url("../resorces/textured_paper.png");
+    object-fit: cover;
+    padding: 3vw;
+}
+/*Text*/
+h1{
+    font-size: var(--fs-titule);
+    color: var(--colorA);
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Noto Serif', serif;
+}
+/*Text*/
+h3{
+    margin: 1vh;
+    font-size: var(--fs-text);
+    color: var(--colorA);
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Noto Serif', serif;
+}
+p{
+    margin: 3vh;
+    font-size: var(--fs-text);
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Noto Serif', serif;
+}
+li{
+    margin: 3vh;
+    font-size: var(--fs-text);
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Noto Serif', serif;
+}
+li a{
+    text-decoration: none;
+    color:black;
+}

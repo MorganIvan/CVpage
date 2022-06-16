@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!---Meta Tags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---CSS Links-->
+    <link rel="stylesheet" href="CSS/General.css" />
+    <link rel="stylesheet" href="/CSS/Movile.css" />
+    <link rel="stylesheet" href="/CSS/PC.css" />
+    <link rel="stylesheet" href="/CSS/PopUps.css" />
+    <!---Google Founts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <title>My CV</title>
+  </head>
+  <body>
+    <header><h1>MORGAN FOSSATI</h1></header>
+
+    <aside>
+      <img
+        src="/resorces/PortetIMG.jpeg"
+        alt="a verry hansome young man looking deeply into your soul"
+        id="myPortret"
+      />
+
+      <section class="asideComponent">
+        <h3 class="notInPhone">Contacto</h3>
+        <div class="iconContainer">
+          
+          <!--this labels are here becouse font awsome's i(icons) element cant be handle directly-->
+          <label id="email">
+            <i id="email" class="fa-regular fa-envelope"></i>
+          </label>
+          <a href="https://github.com/MorganIvan?tab=repositories"
+            ><img
+              id="gitHub"
+              src="/resorces/GitHub-Mark-64px.png"
+              alt="gitHub logo"
+          /></a>
+          <!--this labels are here becouse font awsome's i(icons) element cant be handle directly-->
+          <label id="phone">
+            <i id="phone" class="fa-solid fa-comment-sms"></i>
+          </label>
+        </div>
+      </section>
+      <section class="notInPhone asideComponent">
+        <h3>Otro idioma</h3>
+        <ul>
+          <li>Ingles avanzado</li>
+        </ul>
+      </section>
+      <section class="notInPhone asideComponent">
+        <h3>Otros Intereses</h3>
+        <ul>
+          <li>PixelArt</li>
+          <li>Escritura</li>
+          <li>Gimp</li>
+        </ul>
+      </section>
+      <section class="notInPhone asideComponent">
+        <h3>Bibliografia de Interes</h3>
+        <p>
+          <strong
+            >Design Patterns Elements of Reusable Object-Oriented
+            Software</strong
+          >
+          by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+        </p>
+        <p>
+          <strong>Refactoring: Improving the Design of Existing Code</strong> by
+          Martin Fowler, Kent Beck (Contributor), John Brant (Contributor),
+          William Opdyke, don Roberts
+        </p>
+      </section>
+    </aside>
+
+    <main>
+      <section class="rigthComponent">
+        <h3>PERFIL</h3>
+
+        <p class="subComponent">
+          Mi nombre es Morgan Fossati. Tengo 25 años, vivo en la Ciudad Autónoma
+          de Buenos Aires. Estudio Licenciatura en Análisis de sistemas en la
+          U.B.A.
+        </p>
+      </section>
+
+      <section class="rigthComponent">
+        <h3>FORMACIÓN</h3>
+
+        <ul class="subComponent">
+          <li>
+            <h4>Licenciatura en Sistemas (en curso)</h4>
+            <p>
+              Abril 2020 hasta la Actualidad 11 de 24 materias aprobadas en la
+              Universidad de Buenos Aires (U.B.A.).
+            </p>
+          </li>
+          <li>
+            <h4>Codo a Codo: Desarrollo Web</h4>
+            <p>
+              Completo en Febrero de 2021 Curso de desarrollo Web impartido por
+              profesores de la U.B.A., financiado por el gobierno de la C.A.B.A.
+            </p>
+          </li>
+          <li>
+            <h4>Free Code Camp: Responsive Web Design</h4>
+            <p>
+              Completo en Noviembre de 2021 Curso online interactivo de carácter
+              introductorio a los lenguajes empleados en el desarrollo web.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="rigthComponent">
+        <h3>LENGUAJES DE PROGRAMACIÓN</h3>
+
+        <ul class="subComponent">
+          <li>JavaScrpt, HTML, CSS</li>
+          <li>C++</li>
+          <li>Sql</li>
+        </ul>
+      </section>
+
+      <section class="rigthComponent">
+        <h3>FRAMEWORKS && TOOLS</h3>
+
+        <ul class="subComponent lastList">
+          <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+          <li><a href="https://expressjs.com/">Express</a></li>
+          <li><a href="https://www.mongodb.com/">MongoDB</a></li>
+          <li><a href="https://www.mysql.com">MySql</a></li>
+          <li><a href="https://nodejs.org/en/">NodeJS</a></li>
+          <li><a href="https://reactjs.org">React</a></li>
+          <li><a href="https://reactnative.dev">ReactNative</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <!--this div show the contact popUp depending on the icon you click-->
+    <div id="popUpScreen">
+      <section id="popUp">
+         <h3> Contactame:</h3>
+         <address id="popAd">" "</address>
+         <button id="popBtn"><i class="fa-solid fa-copy"></i></button>
+      </section>
+    </div>
+
+
+    <!---Font Awsome--->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!---popUps Scripts--->
+    <script src="/scripts/popUps.js"></script>
+  </body>
+</html>
